@@ -11,12 +11,12 @@ $(function () {
         $('.reg-box').hide()
     })
 
-    // 从 layui 中获取 form 对象
+    // 从 layui 中获取 form 对象  因为导入了脚本 所以就有layui对象 
     var form = layui.form
     var layer = layui.layer
     // 通过 form.verify() 函数自定义校验规则
     form.verify({
-        // 自定义了一个叫做 pwd 校验规则
+        // 自定义了一个叫做 pwd 校验规则  \s非空格的字符
         pwd: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
         // 校验两次密码是否一致的规则
         repwd: function (value) {
@@ -59,6 +59,7 @@ $(function () {
             method: 'POST',
             // 快速获取表单中的数据
             data: $(this).serialize(),
+            // 尽量不要简写成success(res) 避免this指向混乱
             success: function (res) {
                 if (res.status !== 0) {
                     return layer.msg('登录失败！')
