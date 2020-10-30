@@ -8,7 +8,7 @@ $(function () {
     // 去登录
     $('#link_login').on('click', function () {
         // 隐藏注册框
-        $('.login-box').show()
-        $('.reg-box').hide()
+        $('.login-box').show();
+        $('.reg-box').hide();
     })
 })
