@@ -16,9 +16,10 @@ iframe {
 .layui-body {
     overflow: hidden;
 }
+
 a {
-    transform: none!important;
-}
+    transition: none !important;
+  }
 .userinfo{
     height: 60px;
     line-height: 60px;
