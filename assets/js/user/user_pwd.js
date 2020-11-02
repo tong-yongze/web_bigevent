@@ -16,7 +16,7 @@ $(function () {
     });
     $('.layui-form').on('submit', function (e) {
         e.preventDefault()
-        $.ajax()({
+        $.ajax({
             method: 'POST',
             url: '/my/updatepwd',
             data: $(this).serialize(),
