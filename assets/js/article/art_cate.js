@@ -17,6 +17,7 @@ $(function () {
         })
     }
 
+
     // 为添加类别按钮绑定点击事件
     var indexAdd = null
     $('#btnAddCate').on('click', function () {
