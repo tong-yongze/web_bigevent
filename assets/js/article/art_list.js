@@ -133,6 +133,7 @@ $(function () {
             $.ajax({
                 method: 'GET',
                 url: `/my/article/delete/${id}`,
+
                 success: function (res) {
                     if (res.status !== 0) {
                         return layer.msg('删除文章失败！')
