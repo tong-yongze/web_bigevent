@@ -1,5 +1,5 @@
 $(function () {
-
+    var layer = layui.layer
 
     // 1.1 获取裁剪区域的 DOM 元素
     var $image = $('#image')
@@ -21,9 +21,10 @@ $(function () {
 
     // 为文件选择框绑定change 事件
     $('#file').on('change', function (e) {
+        // console.log(e);
         var filelist = e.target.files
         if (filelist.length === 0) {
-            return layui.layer.msg('请选择照片！tup')
+            return layer.msg('请选择照片！')
         }
         // 1. 拿到用户选择的文件
         var file = e.target.files[0]

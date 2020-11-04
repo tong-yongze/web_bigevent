@@ -50,6 +50,7 @@ function renderAvatat(user) {
 }
 getUserInfo()
 var layer = layui.layer
+
 $('#btnLogout').on('click', function () {
     layer.confirm('你确定退出登录?', { icon: 3, title: '提示' }, function (index) {
         // 1.清空本地token
