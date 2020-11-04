@@ -98,7 +98,7 @@ $(function () {
                 publishArticle(fd)
             })
     })
-    // 定义个发布文章的方法
+    // 定义发布文章的方法
     function publishArticle(fd) {
         $.ajax({
             method: 'POST',
